@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.navbar{
+    background-color: rgb(199, 166, 21);
+    color: white;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo img{
+    width: 8rem;
+    height: 5rem;
+}
+.left{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5rem;
+    padding-right: 5rem;
+}
+.right img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.2rem;
+}
+.dropdown{
+    position: relative;
+    list-style: none;
+}
+.dropdown-toggle {
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 20rem;
+    max-height: 15rem;
+    overflow-y: auto;
+    display: none;
+
+    background: white;
+    color: black;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 0.2rem;
+}
+.dropdown-menu.show{
+    display: block;
+}
+.dropdown-menu li{
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+.dropdown-menu li:hover{
+    background-color: #f2f2f2;
+}
+
+.topbar{
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+
+}
+.menu{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    color: rgba(5, 5, 5, 0.398);
+    padding-right: 4rem;
+}
+.logo img{
+    padding-left: 6.6rem;
+    padding-top: 0.5rem;
+}
+.menu li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.04rem;
+}
+.menu button{
+    height: 2.5rem;
+    width: 8rem;
+    background-color: rgb(199, 166, 21);
+    border-radius: 0.2rem;
+    border: none;
+    font-size: 0.85rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+.bg-img img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #fffdfd;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box,
+.box1 {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    width: 22rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 1rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.boxes img{
+    height: 7rem;
+    width: 7rem;
+}
+.boxes p{
+    font-size: 1.4rem;
+    font-weight: 550;
+    color: black;
+}
+.last{
+    height: 20rem;
+    background-color: rgb(199, 166, 21);
+}
