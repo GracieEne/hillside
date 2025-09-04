@@ -1,3 +1,4 @@
+  // ============LANGUAGE DROPDOWN ===========
   const toggle = document.querySelector('.dropdown-toggle');
   const menu = document.querySelector('.dropdown-menu');
 
@@ -11,6 +12,7 @@
     }
   });
 
+  // ==========NAVBAR/TOPBAR SCROLL BEHAVIOUR==========
   const navbar = document.querySelector(".navbar");
   const topbar = document.querySelector(".topbar");
 
@@ -29,4 +31,35 @@
         topbar.style.top = "3.5rem";
     }
 });
+
+// ===== MOBILE MENU TOGGLE =====
+const menuToggle = document.querySelector('.menu-toggle');
+const mainMenu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    mainMenu.classList.toggle('show');
+});
+
+// Close menu when clicking anywhere outside
+document.addEventListener('click', (e) => {
+    if (!mainMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        mainMenu.classList.remove('show');
+    }
+});
+
+// Close menu when clicking a menu item
+document.querySelectorAll('.menu li').forEach(item => {
+    item.addEventListener('click', () => {
+        mainMenu.classList.remove('show');
+    });
+});
+
+
+
+
+
+
+
+
 
